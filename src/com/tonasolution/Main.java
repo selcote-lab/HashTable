@@ -12,11 +12,11 @@ public class Main {
         SimpleHashTable simpleHashTable = new SimpleHashTable();
         simpleHashTable.put("Zouhaire", zouhaire);
         simpleHashTable.put("Jack", jack);
-        simpleHashTable.put("Kalii", kali);
+        simpleHashTable.put("Kali", kali);
         simpleHashTable.put("smith", kali);
 
         simpleHashTable.print();
 
-        System.out.println("Retrieve key smith " + simpleHashTable.get("smith"));
+        System.out.println("Retrieve key  kali" + simpleHashTable.get("smith"));
     }
 }
