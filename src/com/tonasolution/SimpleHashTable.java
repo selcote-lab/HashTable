@@ -57,6 +57,16 @@ public class SimpleHashTable {
         Employee employee = hashTable[hashedKey].employee;
         hashTable[hashedKey] = null;
 
+        StoreEmployee[] oldHashTable = hashTable;
+        hashTable = new StoreEmployee[oldHashTable.length];
+
+        for (int i = 0; i < oldHashTable.length; i++) {
+
+            if (oldHashTable[i] != null) {
+                put(oldHashTable[i].key, oldHashTable[i].employee);
+            }
+        }
+
         return employee;
     }
 
